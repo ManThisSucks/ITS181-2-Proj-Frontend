@@ -95,6 +95,7 @@ main {
 
 .toggle-availability {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 

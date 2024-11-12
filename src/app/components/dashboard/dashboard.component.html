@@ -14,7 +14,7 @@
                     <p><strong>Age:</strong> {{ dog.age }} years</p>
                     <p>{{ dog.description }}</p>
                     <p *ngIf="dog.available === false" class="unavailable-note">
-                        This dog has someone interested. <span class="toggle-availability" (click)="relistDog(dog.id)">Click here to relist</span>
+                        This dog is currently unavailable. <span class="toggle-availability" (click)="relistDog(dog.id)">Click here to relist</span>
                     </p>
                     <p *ngIf="dog.available === true" class="available-note">
                         This dog is currently available! <span class="toggle-availability" (click)="unlistDog(dog.id)">Click here to unlist</span>
