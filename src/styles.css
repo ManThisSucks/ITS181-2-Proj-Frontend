@@ -6,3 +6,20 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.back-home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #aaaaaa; /* Use your preferred color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-home-button:hover {
+    background-color: #949494; /* Slightly darker shade for hover effect */
+  }
+  

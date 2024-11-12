@@ -12,7 +12,10 @@ export class AdoptDogsComponent implements OnInit {
   
   dogs?: Dog[] = [];
   
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(
+    private http: HttpClient, 
+    public router: Router
+  ) { }
   
   ngOnInit(): void {
     this.initData();

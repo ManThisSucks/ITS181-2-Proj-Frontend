@@ -17,7 +17,7 @@ export class EditDogComponent implements OnInit {
     private route: ActivatedRoute,
     private http: HttpClient,
     private fb: FormBuilder,
-    private router: Router
+    public router: Router
   ) {}
 
   ngOnInit(): void {

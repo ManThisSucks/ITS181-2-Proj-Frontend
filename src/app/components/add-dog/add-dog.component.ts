@@ -15,7 +15,7 @@ export class AddDogComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private fb: FormBuilder,
-    private router: Router
+    public router: Router
   ) {}
 
   ngOnInit(): void {
