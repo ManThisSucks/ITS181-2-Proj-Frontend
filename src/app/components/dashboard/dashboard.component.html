@@ -13,13 +13,17 @@
                     <p><strong>Breed:</strong> {{ dog.breed }}</p>
                     <p><strong>Age:</strong> {{ dog.age }} years</p>
                     <p>{{ dog.description }}</p>
-                    <p *ngIf="!dog.isAvailable" class="availability-note">
-                        This dog may have other people interested in it.
+                    <p *ngIf="dog.available === false" class="unavailable-note">
+                        This dog has someone interested. <span class="toggle-availability" (click)="relistDog(dog.id)">Click here to relist</span>
+                    </p>
+                    <p *ngIf="dog.available === true" class="available-note">
+                        This dog is currently available! <span class="toggle-availability" (click)="unlistDog(dog.id)">Click here to unlist</span>
                     </p>
                     <!-- should be link to edit page or add-dog.html -->
                     <button class="edit-button" (click)="editDog(dog.id)">Edit</button>
                     <!-- should be a function to delete teh selected dog record -->
                     <button class="delete-button" (click)="deleteDog(dog.id)">Delete</button>
+                    <hr />
                 </div>
             </div>
 

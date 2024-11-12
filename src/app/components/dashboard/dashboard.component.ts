@@ -51,4 +51,26 @@ export class DashboardComponent {
     this.router.navigate(['/add-dog']);
   }
 
+  unlistDog(id: number): void {
+    this.http.get(`http://localhost:18080/api/reserve-dog/${id}`).subscribe({
+      next: () => {
+        console.log(`Dog with id ${id} unlisted/reserved successfully`);
+        // Refresh the dog list
+        this.initData();
+      },
+      error: (err) => console.error('Error unlisting dog', err)
+    });
+  }
+
+  relistDog(id: number): void {
+    this.http.get(`http://localhost:18080/api/unreserve-dog/${id}`).subscribe({
+      next: () => {
+        console.log(`Dog with id ${id} relisted successfully`);
+        // Refresh the dog list
+        this.initData();
+      },
+      error: (err) => console.error('Error relisting dog', err)
+    });
+  }
+
 }

@@ -85,6 +85,19 @@ main {
     background-color: #aa2e25;
 }
 
+.dog-card .unavailable-note {
+    color: darkred;
+}
+
+.dog-card .available-note {
+    color: rgb(0, 139, 35);
+}
+
+.toggle-availability {
+    text-decoration: underline;
+}
+
+
 /* Add Dog Button */
 .add-dog-button {
     display: block;
@@ -98,10 +111,6 @@ main {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 1em;
-}
-
-.availability-note p {
-    color: darkred;
 }
 
 .add-dog-button:hover {

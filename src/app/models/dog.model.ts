@@ -4,6 +4,6 @@ export type Dog = {
     breed: string;
     age: number;
     description: string;
-    isAvailable: boolean;
+    available: boolean;
     imageFilePath: string;
 }
