@@ -14,14 +14,18 @@
           <input type="text" id="breed" formControlName="breed" placeholder="Enter dog's breed" required>
   
           <label for="age">Age</label>
-          <input type="number" id="age" formControlName="age" placeholder="Enter dog's age" min="0" required>
+          <input type="number" id="age" formControlName="age" placeholder="Enter dog's age in years" min="0" required>
   
           <label for="description">Description</label>
           <input type="text" id="description" formControlName="description" placeholder="Enter description" required>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="available" formControlName="available">
+            <label for="available">Up for Adoption</label>
+          </div>
 
-          <label for="available">Up for Adoption</label>
-          <input type="checkbox" id="available" formControlName="available">
-  
+          <br />
+
           <div class="form-buttons">
             <button type="submit" class="save-button" [disabled]="editForm.invalid">Save</button>
             <button type="button" class="cancel-button" (click)="goBack()">Cancel</button>

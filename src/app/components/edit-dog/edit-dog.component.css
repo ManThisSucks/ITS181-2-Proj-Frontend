@@ -60,6 +60,17 @@ main {
     font-size: 1em;
 }
 
+/* Checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 8px;
+    /* Adjusts space between checkbox and label */
+}
+
 /* Buttons */
 .form-buttons {
     display: flex;
