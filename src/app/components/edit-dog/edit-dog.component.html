@@ -1,0 +1,35 @@
+<div class="container">
+    <header>
+        <h1>Edit Dog Record</h1>
+    </header>
+
+    <main>
+        <section class="edit-form-section">
+            <h2>Update Dog Information</h2>
+            <form class="edit-form">
+                <label for="name">Dog Name</label>
+                <!-- placeholder should be the name of the selected dog -->
+                <input type="text" id="name" name="name" placeholder="Enter dog's name" required>
+
+                <label for="breed">Breed</label>
+                <!-- placeholder should be the breed of the selected dog -->
+                <input type="text" id="breed" name="breed" placeholder="Enter dog's breed" required>
+
+                <label for="age">Age</label>
+                <!-- placeholder should be the age of the selected dog -->
+                <input type="number" id="age" name="age" placeholder="Enter dog's age" min="0" required>
+
+                <div class="form-buttons">
+                    <!-- it should be a function to update the dog records in our database -->
+                    <button type="submit" class="save-button">Save</button>
+                    <button type="button" class="cancel-button" onclick="window.history.back()">Cancel</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Dog Adoption Portal</p>
+    </footer>
+</div>

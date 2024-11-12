@@ -1,0 +1,17 @@
+<div class="container">
+    <header>
+        <h1>Welcome to the Dog Adoption Portal</h1>
+    </header>
+    <main>
+        <section class="options">
+            <p>Select an option to proceed:</p>
+            <!-- Should be link to Admin page -- admin.html -->
+            <a [routerLink]="'/admin'" class="option-button admin-button">Admin Account</a>
+            <!-- Should be link to User Page -- user.html -->
+            <a [routerLink]="'/adopt-a-dog'" class="option-button user-button">User Account</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Dog Adoption Portal</p>
+    </footer>
+</div>

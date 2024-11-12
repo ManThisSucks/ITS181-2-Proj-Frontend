@@ -1,0 +1,103 @@
+/* Flexbox Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+/* Dog Records Section */
+.dog-records {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-records h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Individual Dog Record */
+.dog-record {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dog-record p {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.edit-button,
+.delete-button {
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+/* Add Dog Button */
+.add-dog-button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.add-dog-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f1f1f1;
+    color: #333;
+}

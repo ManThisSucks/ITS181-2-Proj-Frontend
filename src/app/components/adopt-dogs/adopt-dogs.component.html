@@ -1,0 +1,26 @@
+<div class="container">  
+    <header>
+        <h1>Dog Adoption Portal</h1>
+      </header>
+    
+      <main>
+        <section class="dog-list">
+          <h2>Available Dogs for Adoption</h2>
+
+          <div class="dog-card" *ngFor="let dog of dogs" href="">
+            <p><strong>Name:</strong> {{ dog.name }}</p>
+            <p><strong>Breed:</strong> {{ dog.breed }}</p>
+            <p><strong>Age:</strong> {{ dog.age }} years</p>
+            <p>{{ dog.description }}</p>
+            <p *ngIf="!dog.isAvailable" class="availability-note">
+                This dog may have other people interested in it.
+            </p>
+            <button class="adopt-button" (click)="adoptDog(dog.id)">I'm Interested in Adopting</button>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; Dog Adoption Portal</p>
+      </footer>
+</div>

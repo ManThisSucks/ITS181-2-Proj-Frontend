@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+header {
+    background-color: #008CBA;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex-grow: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+/* Options Section */
+.options {
+    text-align: center;
+}
+
+.options p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Option Buttons */
+.option-button {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0.5em;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-button {
+    background-color: #4CAF50;
+}
+
+.admin-button:hover {
+    background-color: #45a049;
+}
+
+.user-button {
+    background-color: #008CBA;
+}
+
+.user-button:hover {
+    background-color: #007BAA;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f1f1f1;
+    color: #333;
+}

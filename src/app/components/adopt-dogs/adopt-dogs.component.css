@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+header {
+    background-color: #008CBA;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+/* Dog List Section */
+.dog-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-list h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Individual Dog Card */
+.dog-card {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dog-card p {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+/* Adoption Button */
+.adopt-button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.adopt-button:hover {
+    background-color: #007BAA;
+}
+
+.availability-note {
+    color: darkred;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f1f1f1;
+    color: #333;
+}
