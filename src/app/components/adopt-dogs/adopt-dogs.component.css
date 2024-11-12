@@ -55,6 +55,10 @@ main {
     color: #333;
 }
 
+.dog-card .availability-note {
+    color: darkred;
+}
+
 /* Adoption Button */
 .adopt-button {
     display: block;
@@ -72,10 +76,6 @@ main {
 
 .adopt-button:hover {
     background-color: #007BAA;
-}
-
-.availability-note {
-    color: darkred;
 }
 
 footer {

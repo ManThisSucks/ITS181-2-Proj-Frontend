@@ -33,15 +33,22 @@ export class DashboardComponent {
   }
 
   editDog(id: number): void {
-    //TODO: go to edit-dog component to get the required info, then when the user clicks submit, send a PUT request to /api/update-dog/{id} with the updated info
+    this.router.navigate(['/edit-dog', id]);
   }
 
   deleteDog(id: number): void {
-    //TODO: send a DELETE request to /api/dog/{id} and refresh the dashboard
+    this.http.delete(`http://localhost:18080/api/dog/${id}`).subscribe({
+      next: () => {
+        console.log(`Dog with id ${id} deleted successfully`);
+        // Refresh the dog list after deletion
+        this.initData();
+      },
+      error: (err) => console.error('Error deleting dog', err)
+    });
   }
 
   addDog(): void {
-    //TODO: go to add-dog component to get the required info, then when the user clicks submit, send a POST request to /api/add-dog with the updated info
+    this.router.navigate(['/add-dog']);
   }
 
 }

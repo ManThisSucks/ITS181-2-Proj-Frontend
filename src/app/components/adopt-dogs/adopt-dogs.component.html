@@ -12,9 +12,6 @@
             <p><strong>Breed:</strong> {{ dog.breed }}</p>
             <p><strong>Age:</strong> {{ dog.age }} years</p>
             <p>{{ dog.description }}</p>
-            <p *ngIf="!dog.isAvailable" class="availability-note">
-                This dog may have other people interested in it.
-            </p>
             <button class="adopt-button" (click)="adoptDog(dog.id)">I'm Interested in Adopting</button>
           </div>
         </section>

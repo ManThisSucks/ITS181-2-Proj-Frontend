@@ -18,7 +18,7 @@ export class AdoptDogsComponent implements OnInit {
     this.initData();
   }
   initData(): void {
-    this.http.get<Dog[]>('http://localhost:18080/api/dogs/all')
+    this.http.get<Dog[]>('http://localhost:18080/api/dogs/available')
     .subscribe({
       next: (data: Dog[]) => {
         this.dogs=data;
