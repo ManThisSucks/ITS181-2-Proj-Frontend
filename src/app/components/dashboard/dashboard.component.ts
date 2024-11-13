@@ -30,11 +30,6 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  adoptDog(id: number): void {
-    this.http.get('http://localhost:18080/api/reserve-dog/' + id.toString())
-    this.router.navigate(['/success']);
-  }
-
   editDog(id: number): void {
     this.router.navigate(['/edit-dog', id]);
   }
